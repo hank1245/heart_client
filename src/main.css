@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  position: relative;
+}
+#three-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.count {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-left: 100px;
+}
