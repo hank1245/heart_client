@@ -85,7 +85,7 @@ function draw() {
 }
 
 async function getCount() {
-  const res = await fetch("http://13.124.112.248:5001/click")
+  const res = await fetch("https://13.124.112.248:5001/click")
     .then((data) => data.json())
     .then((data) => (count.innerHTML = data[0].count));
 }

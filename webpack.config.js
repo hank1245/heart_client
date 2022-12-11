@@ -63,10 +63,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: "./src/main.css", to: "./main.css" },
-        { from: "./src/models", to: "./models" },
-      ],
+      patterns: [{ from: "./src/models", to: "./models" }],
     }),
   ],
 };
