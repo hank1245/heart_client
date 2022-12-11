@@ -85,7 +85,7 @@ function draw() {
 }
 
 async function getCount() {
-  const res = await fetch("https://spinninglowpolyheart.tk:5002/click")
+  const res = await fetch("https://spinninglowpolyheart.tk:2087/click")
     .then((data) => data.json())
     .then((data) => (count.innerHTML = data[0].count));
 }
