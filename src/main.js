@@ -85,7 +85,7 @@ function draw() {
 }
 
 async function getCount() {
-  const res = await fetch("http://spinninglowpolyheart:5001/click")
+  const res = await fetch("https://spinninglowpolyheart.tk:5002/click")
     .then((data) => data.json())
     .then((data) => (count.innerHTML = data[0].count));
 }
@@ -95,7 +95,6 @@ function checkIntersects() {
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObjects([heartModel]);
   for (const item of intersects) {
-    console.log(item);
     item.object.material.color.set("red");
     getCount();
     break;
@@ -117,3 +116,5 @@ canvas.addEventListener("click", (e) => {
 });
 
 draw();
+
+//13.124.112.248
